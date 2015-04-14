@@ -40,6 +40,7 @@ class LongRunningGetIO extends AsyncTask<Void, Void, String> {
 		HttpContext localContext = new BasicHttpContext();
 		HttpGet httpGet = new HttpGet(
 				"http://api.rottentomatoes.com/api/public/v1.0/movies.json?apikey=kke3abdzttj3smvvhb8xm83u&q=Toy+Story&page_limit=3");
+				//"http://api.rottentomatoes.com/api/public/v1.0/movies.json?apikey=kke3abdzttj3smvvhb8xm83u&q=Jurassic+Park&page_limit=3");
 		String text = null;
 		try {
 			HttpResponse response = httpClient.execute(httpGet, localContext);
